@@ -24,6 +24,12 @@ A Rust reimplementation of [`srandrd`](https://github.com/jceb/srandrd), a simpl
 cargo build --release
 ```
 
+## Install
+
+```sh
+cargo install --git https://github.com/zafkar/rsrandrd.git
+```
+
 ## Usage
 
 ```sh
