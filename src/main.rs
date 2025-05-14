@@ -125,6 +125,8 @@ fn process_events(conn: &RustConnection, args: &[String]) {
 
 fn main() {
     let args: Vec<String> = env::args().collect();
+    println!("Connecting to the X Server ...");
     let (conn, _) = RustConnection::connect(None).expect("Failed to connect to X server");
+    println!("Now Listening events");
     process_events(&conn, &args[1..]);
 }
